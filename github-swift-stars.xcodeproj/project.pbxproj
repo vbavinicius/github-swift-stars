@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		803BD5452508119D00A42094 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 803BD5442508119D00A42094 /* Kingfisher */; };
 		803BD5472508128B00A42094 /* UIImageView+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803BD5462508128B00A42094 /* UIImageView+Kingfisher.swift */; };
+		806E9D5A2508537C00BBBC71 /* GitHubAPIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806E9D592508537C00BBBC71 /* GitHubAPIKey.swift */; };
 		806EB0912508247800EB8A7F /* APIRouteMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806EB0902508247800EB8A7F /* APIRouteMock.swift */; };
 		806EB09825082BF900EB8A7F /* ReposAdapterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806EB09725082BF900EB8A7F /* ReposAdapterTests.swift */; };
 		806EB09A25082FC700EB8A7F /* ReposListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806EB09925082FC700EB8A7F /* ReposListViewModelTests.swift */; };
@@ -56,6 +57,7 @@
 
 /* Begin PBXFileReference section */
 		803BD5462508128B00A42094 /* UIImageView+Kingfisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Kingfisher.swift"; sourceTree = "<group>"; };
+		806E9D592508537C00BBBC71 /* GitHubAPIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAPIKey.swift; sourceTree = "<group>"; };
 		806EB0902508247800EB8A7F /* APIRouteMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouteMock.swift; sourceTree = "<group>"; };
 		806EB09725082BF900EB8A7F /* ReposAdapterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposAdapterTests.swift; sourceTree = "<group>"; };
 		806EB09925082FC700EB8A7F /* ReposListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposListViewModelTests.swift; sourceTree = "<group>"; };
@@ -239,6 +241,7 @@
 				80EC0E272502BA1A003D26E6 /* UI */,
 				80BB6193250280B0007C4923 /* LaunchScreen.storyboard */,
 				80BB6196250280B0007C4923 /* Info.plist */,
+				806E9D592508537C00BBBC71 /* GitHubAPIKey.swift */,
 			);
 			path = "github-swift-stars";
 			sourceTree = "<group>";
@@ -440,6 +443,7 @@
 				80EC0E222502A7A3003D26E6 /* UITableViewCell+Extensions.swift in Sources */,
 				80999F4525029D3900110D11 /* RepoTableViewCell.swift in Sources */,
 				809040D925030C950074B5D0 /* ReposAdapter.swift in Sources */,
+				806E9D5A2508537C00BBBC71 /* GitHubAPIKey.swift in Sources */,
 				809040D6250300090074B5D0 /* ReposService.swift in Sources */,
 				80895A9E25051E6E0027DAEA /* ErrorView.swift in Sources */,
 			);

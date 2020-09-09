@@ -35,7 +35,9 @@ struct RequestMapper: RequestMapperProtocol {
         guard let url = urlComponents.url else { return nil }
         var request = URLRequest(url: url)
         request.httpMethod = route.method.rawValue
-        request.setValue("token 97eaf9566aad911711024300a0c1e260f5e3f43b", forHTTPHeaderField: "Authorization")
+        if GitHubAPIKey.key != "YOUR KEY HERE" {
+            request.setValue("token \(GitHubAPIKey.key)", forHTTPHeaderField: "Authorization")
+        }
     
         return request
     }
