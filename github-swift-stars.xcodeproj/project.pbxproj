@@ -33,6 +33,7 @@
 		80BB6192250280B0007C4923 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80BB6191250280B0007C4923 /* Assets.xcassets */; };
 		80BB6195250280B0007C4923 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80BB6193250280B0007C4923 /* LaunchScreen.storyboard */; };
 		80BB61AB2502812B007C4923 /* ReposListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BB61AA2502812B007C4923 /* ReposListViewController.swift */; };
+		80CFA58725090BF3004B6EF9 /* ReposServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CFA58625090BF3004B6EF9 /* ReposServiceMock.swift */; };
 		80EC0E222502A7A3003D26E6 /* UITableViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EC0E212502A7A3003D26E6 /* UITableViewCell+Extensions.swift */; };
 		80EC0E242502AB36003D26E6 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EC0E232502AB36003D26E6 /* UITableView+Extensions.swift */; };
 		80EC0E2A2502BA36003D26E6 /* ViewConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EC0E292502BA36003D26E6 /* ViewConfigurable.swift */; };
@@ -85,6 +86,7 @@
 		80BB619B250280B0007C4923 /* github-swift-starsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "github-swift-starsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80BB61A1250280B0007C4923 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80BB61AA2502812B007C4923 /* ReposListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposListViewController.swift; sourceTree = "<group>"; };
+		80CFA58625090BF3004B6EF9 /* ReposServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposServiceMock.swift; sourceTree = "<group>"; };
 		80EC0E212502A7A3003D26E6 /* UITableViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extensions.swift"; sourceTree = "<group>"; };
 		80EC0E232502AB36003D26E6 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
 		80EC0E292502BA36003D26E6 /* ViewConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConfigurable.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				80710C3225081DC5008D3DE2 /* RequestMapperMock.swift */,
 				806EB0902508247800EB8A7F /* APIRouteMock.swift */,
 				80710C3425081E80008D3DE2 /* APIErrorMapperMock.swift */,
+				80CFA58625090BF3004B6EF9 /* ReposServiceMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -458,6 +461,7 @@
 				80710C3525081E80008D3DE2 /* APIErrorMapperMock.swift in Sources */,
 				806EB09A25082FC700EB8A7F /* ReposListViewModelTests.swift in Sources */,
 				80710C2E25081D09008D3DE2 /* RequestMapperTests.swift in Sources */,
+				80CFA58725090BF3004B6EF9 /* ReposServiceMock.swift in Sources */,
 				80710C3325081DC5008D3DE2 /* RequestMapperMock.swift in Sources */,
 				80710C3025081D32008D3DE2 /* APIErrorMapperTests.swift in Sources */,
 			);

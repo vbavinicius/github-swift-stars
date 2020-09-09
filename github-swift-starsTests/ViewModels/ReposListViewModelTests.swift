@@ -13,24 +13,47 @@ import XCTest
 class ReposListViewModelTests: XCTestCase {
     
     var sut: ReposListViewModel!
+    var reposServiceMock: ReposServiceMock!
     
     override func setUp() {
-        sut = ReposListViewModel()
+        reposServiceMock = ReposServiceMock()
+        sut = ReposListViewModel(reposService: reposServiceMock)
     }
     
-    func test_currentWillChange_afterSuccessfullRequest() {
+    func test_currentPageWillNotChange_afterFailureRequest() {
 
-        let expectedPage = 3
-        let exp = expectation(description: "current page will be updated")
+        let expectedPage = 2
+        sut.currentReposPage = 2
+        let exp = expectation(description: "")
         
-        sut.currentPageDidChanged = { page in
+        reposServiceMock._swiftRepos = { page, result in
+            result(.failure(APIError.generic))
             exp.fulfill()
         }
+        
+        sut.getRepos()
+        
+        wait(for: [exp], timeout: 5)
+        
+        XCTAssertEqual(sut.currentReposPage, expectedPage)
+    }
+    
+    func test_currentPageWillChange_afterSuccessfullRequest() {
+
+        let repoResponse = ReposResponse(items: [], totalCount: 1)
+        let exp = expectation(description: "")
+        
+        self.reposServiceMock._swiftRepos = { page, result in
+            result(.success(repoResponse))
+            exp.fulfill()
+        }
+        
         sut.currentReposPage = 2
         sut.getRepos()
         
         wait(for: [exp], timeout: 5)
-        XCTAssertEqual(sut.currentReposPage, expectedPage)
+        
+        XCTAssertEqual(sut.currentReposPage, 3)
     }
 
 }
